@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team</title>
+
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+
+    /* Team Container */
+    .team-container {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    /* Card Styling */
+    .team-card {
+      background-color: white;
+      border: 2px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      width: 30%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Team Lead Highlight */
+    .lead {
+      background-color: #e8f4ff;
+      border: 2px solid #0077b6;
+    }
+
+    /* Image Placeholder */
+    .team-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .team-card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+    }
+
+    .team-card h3 {
+      font-size: 1rem;
+      color: #0077b6;
+      margin-bottom: 10px;
+    }
+
+    .team-card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 600px) {
+      .team-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .team-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Meet Our Team</h1>
+
+  <div class="team-container">
+    <div class="team-card">
+      <img src="https://via.placeholder.com/100" alt="Team Member 1">
+      <h2>Rahul Mehta</h2>
+      <h3>Developer</h3>
+      <p>Rahul is a skilled web developer with a passion for creating clean and efficient code for web applications.</p>
+    </div>
+
+    <div class="team-card lead">
+      <img src="https://via.placeholder.com/100" alt="Team Member 2">
+      <h2>Gitesh Sorout</h2>
+      <h3>Team Lead</h3>
+      <p>Gitesh leads the team with expertise in AI and analytics, ensuring smooth collaboration and top-quality results.</p>
+    </div>
+
+    <div class="team-card">
+      <img src="https://via.placeholder.com/100" alt="Team Member 3">
+      <h2>Monika Sharma</h2>
+      <h3>Designer</h3>
+      <p>Monika is a creative designer who focuses on crafting user-friendly, visually appealing interfaces.</p>
+    </div>
+  </div>
+</body>
+</html>
