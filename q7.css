@@ -1,0 +1,14 @@
+/* q7.css */
+*{box-sizing:border-box;margin:0;padding:0}
+body{height:100vh;display:flex;align-items:center;justify-content:center;background:#f9fbff}
+.loader{display:flex;gap:.6rem;align-items:center;justify-content:center}
+.dot{width:14px;height:14px;border-radius:50%;background:#0a74da;animation:jump 0.8s ease-in-out infinite;transform:translateY(0)}
+/* staggered delays */
+.dot:nth-child(1){animation-delay:0s}
+.dot:nth-child(2){animation-delay:.12s}
+.dot:nth-child(3){animation-delay:.24s}
+
+@keyframes jump{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-14px)}
+}

@@ -1,0 +1,79 @@
+/* q5.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #f6f7fb;
+  padding: 2rem;
+}
+
+.pricing {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+  justify-content: center;
+  animation: fadeIn 0.8s ease both;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  flex: 1;
+  min-width: 180px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.featured {
+  transform: scale(1.05);
+  background: #fff9e6;
+  border: 1px solid #f0d58c;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* fade-in keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Stack vertically below 750px */
+@media (max-width: 750px) {
+  .pricing {
+    flex-direction: column;
+    width: 100%;
+    max-width: 420px;
+  }
+  .card {
+    width: 100%;
+  }
+}

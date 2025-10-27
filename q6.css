@@ -1,0 +1,21 @@
+/* q6.css */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui;background:#f8f9fb;padding:1rem}
+.page{display:grid;grid-template-columns:240px 1fr;grid-template-rows:auto 1fr auto;grid-gap:1rem;grid-template-areas:
+  "header header"
+  "sidebar content"
+  "footer footer";min-height:80vh}
+.site-header{grid-area:header;padding:1rem;background:#0a74da;color:#fff;display:flex;justify-content:space-between;align-items:center;border-radius:8px}
+.sidebar{grid-area:sidebar;background:#fff;padding:1rem;border-radius:8px}
+.content{grid-area:content;background:#fff;padding:1rem;border-radius:8px;display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.post{padding:1rem;border-radius:6px;background:#fafafa;display:flex;flex-direction:column;justify-content:flex-start}
+.site-footer{grid-area:footer;padding:1rem;text-align:center;background:#f0f2f5;border-radius:8px}
+/* Below 800px: sidebar moves below main */
+@media (max-width:800px){
+  .page{grid-template-columns:1fr;grid-template-areas:
+    "header"
+    "content"
+    "sidebar"
+    "footer"}
+  .content{grid-template-columns:1fr;order:1}
+}

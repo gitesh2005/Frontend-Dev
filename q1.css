@@ -1,0 +1,19 @@
+/* q1.css */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial;min-height:100vh;display:flex;flex-direction:column}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;background:#0a74da;color:#fff}
+.site-header .logo{font-weight:700;font-size:1.2rem}
+.site-header .nav a{color:#fff;margin-left:1rem;text-decoration:none}
+.main{display:flex;gap:2rem;align-items:center;justify-content:center;flex:1;padding:2rem}
+.about, .photo{flex:1;display:flex;align-items:center;justify-content:center}
+.about{padding:1rem}
+.about h1{margin-bottom:.5rem}
+.photo img{max-width:100%;height:auto;border-radius:8px}
+/* Footer */
+.site-footer{text-align:center;padding:1rem;background:#f4f4f4}
+/* Responsive: stack below 700px */
+@media (max-width:700px){
+  .site-header{flex-direction:row;gap:.5rem}
+  .main{flex-direction:column;padding:1rem}
+  .site-header .nav{display:flex;gap:.5rem;flex-wrap:wrap}
+}
