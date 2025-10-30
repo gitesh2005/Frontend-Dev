@@ -1,0 +1,17 @@
+body{font-family:system-ui,Arial;margin:20px;background:#f7f7f8;color:#222}
+header h1{margin-bottom:12px}
+.box-row{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.box{width:170px;height:120px;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:6px;transition: border-color 0.25s ease, transform 0.18s ease}
+.box span{font-size:12px;color:#555;margin-top:6px}
+
+
+/* Different border styles and padding examples */
+.solid{border:4px solid #2b7; padding:8px}
+.dashed{border:4px dashed #27a; padding:14px}
+.double{border:6px double #b35; padding:4px}
+.groove{border:6px groove #888; padding:20px}
+.rounded{border:4px solid #ff7; border-radius:30px; padding:12px}
+
+
+/* Hover effect: smooth transition of border color */
+.box:hover{border-color:#ff3b6f; transform:translateY(-6px)}

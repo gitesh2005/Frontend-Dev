@@ -1,0 +1,64 @@
+/* q9.css */
+/* ---------------------------------
+   Outline and Focus Styling Form
+----------------------------------*/
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9fb;
+  margin: 40px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Labels */
+label {
+  font-weight: 600;
+}
+
+/* Inputs and textarea */
+input, textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+/* Outline and focus effects */
+input:focus, textarea:focus {
+  outline: 3px solid #5a8fff;
+  outline-offset: 3px;
+  border-color: #5a8fff;
+}
+
+/* Button styling */
+button {
+  background: #0056d2;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #003ea6;
+  transform: translateY(-2px);
+}

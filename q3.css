@@ -1,0 +1,15 @@
+/* q3.css */
+/* Fixed header/footer, two gradient sections; radial uses background-attachment: fixed */
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial;color:#fff}
+.fixed-head,.fixed-foot{position:fixed;left:0;right:0;padding:12px;text-align:center;background:rgba(0,0,0,0.45);z-index:10}
+.fixed-head{top:0}
+.fixed-foot{bottom:0}
+main{padding:72px 18px 60px}
+
+
+.linear{min-height:45vh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:linear-gradient(120deg,#4facfe 0%,#00f2fe 100%);text-align:center}
+.radial{min-height:55vh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:radial-gradient(circle at 20% 20%, #ff9a9e, #fad0c4 40%, #ffd1ff 100%);background-attachment:fixed;text-align:center}
+
+
+.linear h2, .radial h2{margin:6px 0}

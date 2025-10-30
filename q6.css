@@ -1,0 +1,12 @@
+/* q6.css */
+body{font-family:Arial;margin:28px}
+.transform-row{display:flex;gap:18px;align-items:center;justify-content:center}
+.tile{display:flex;flex-direction:column;align-items:center}
+.shape{width:120px;height:120px;border-radius:8px;display:flex;align-items:center;justify-content:center;background:#cfe8ff;transition:all 0.4s ease}
+.tile:hover .shape{transform-origin:center}
+/* Hover transforms */
+.rotate:hover .shape{transform:rotate(18deg)}
+.scale:hover .shape{transform:scale(1.12)}
+.translate:hover .shape{transform:translateX(14px) translateY(-6px)}
+.skew:hover .shape{transform:skew(10deg,6deg)}
+figcaption{margin-top:8px;font-size:14px}

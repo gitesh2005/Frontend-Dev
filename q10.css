@@ -1,0 +1,62 @@
+/* q10.css */
+/* ---------------------------------
+   Navigation Bar with Transitions
+----------------------------------*/
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f6fa;
+  color: #222;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #1e293b;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Links */
+nav a {
+  color: #f1f5f9;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* Hover and active states */
+nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+}
+
+nav a.active {
+  background-color: #2563eb;
+}
+
+/* Responsive design: stack vertically below 700px */
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #e2e8f0;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 14px;
+}
