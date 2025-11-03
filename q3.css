@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  background: #f2f4f8;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+figure {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+figure:hover {
+  transform: scale(1.1);
+  filter: brightness(0.8);
+}
+
+figcaption {
+  padding: 8px;
+}

@@ -1,0 +1,96 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; /* avoid scrollbars */
+}
+
+.animation-area {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+}
+
+/* 🔹 Blue moving box (unchanged) */
+.box {
+  width: 80px;
+  height: 80px;
+  background: #007bff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: move-and-hide 3s linear infinite;
+}
+
+/* 🔹 Green ball — goes from bottom to top, disappears, reappears */
+.ball {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #28a745;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: move-vertical 3s linear infinite;
+}
+
+/* Color-changing text (kept if needed later) */
+.color-change {
+  animation: colorShift 0.1s infinite alternate;
+}
+
+/* 🔹 Blue box animation (unchanged) */
+@keyframes move-and-hide {
+  0% {
+    transform: translateX(-80px);
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(calc(100vw - 80px));
+  }
+  90% {
+    opacity: 0;
+    transform: translateX(calc(100vw + 80px));
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+}
+
+/* 🔹 Corrected vertical animation for ball */
+@keyframes move-vertical {
+  0% {
+    transform: translateX(-50%) translateY(calc(-100vh - 50px)); /* start below screen */
+    opacity: 0;
+  }
+  10% {
+    opacity: 1; /* fade in when entering */
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(100vh - 50px); /* move fully to top */
+  }
+  90% {
+    opacity: 0; /* fade out after leaving top */
+    transform: translateX(-50%) translateY(calc(100vh + 50px));
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(calc(-100vh - 50px)); /* reset below screen */
+  }
+}
+
+@keyframes colorShift {
+  from { color: #007bff; }
+  to { color: #dc3545; }
+}

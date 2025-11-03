@@ -1,0 +1,17 @@
+/* Element selector */
+p { color: #333; }
+
+/* ID selector */
+#intro { color: #007bff; }
+
+/* Class selector */
+.highlight { background: #ffeeba; }
+
+/* Attribute selector */
+li[data-info] { font-style: italic; color: #28a745; }
+
+/* Child selector */
+.parent > p { font-weight: bold; }
+
+/* Sibling selector */
+p + span { color: #dc3545; }

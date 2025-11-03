@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f1f3f6;
+}
+
+.btn-container {
+  display: flex;
+  gap: 20px;
+}
+
+.effect-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.effect-btn:hover {
+  transform: scale(1.1);
+  background: #0056b3;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #e3f2fd, #fce4ec);
+  font-family: sans-serif;
+}
+
+.ui-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 10px;
+}
+
+input, select, .btn {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+input:focus, select:focus { outline: 2px solid #007bff; }
+.btn:hover { background: #007bff; color: white; }
