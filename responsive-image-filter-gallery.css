@@ -1,0 +1,79 @@
+/* ========== General Styles ========== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #333;
+  text-align: center;
+}
+
+/* ========== Header ========== */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+}
+
+/* ========== Gallery Section ========== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* ========== Image Container ========== */
+.image-container {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+  transform: scale(1.03);
+}
+
+/* ========== Image Styles ========== */
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  transition: filter 0.5s ease;
+}
+
+/* Different filters for each image */
+.blur { filter: blur(3px); }
+.grayscale { filter: grayscale(100%); }
+.sepia { filter: sepia(100%); }
+.brightness { filter: brightness(0.6); }
+.contrast { filter: contrast(180%); }
+.hue-rotate { filter: hue-rotate(120deg); }
+
+/* Remove filter on hover */
+.image-container img:hover {
+  filter: none;
+}
+
+/* ========== Caption ========== */
+.image-container p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* ========== Footer ========== */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  font-size: 0.9rem;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}

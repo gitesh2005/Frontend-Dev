@@ -1,0 +1,59 @@
+/* ========== General Styles ========== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  text-align: center;
+}
+
+/* ========== Header ========== */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+}
+
+/* ========== Text Section ========== */
+.text-section {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive font scaling using clamp() */
+.text-section h1 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.text-section p {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 1.6;
+  color: #555;
+}
+
+/* ========== Footer ========== */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* ========== Responsive Adjustments (Below 700px) ========== */
+@media (max-width: 700px) {
+  .text-section {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+
+  .text-section p {
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+  }
+}

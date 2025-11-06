@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design Principles Summary - Gitesh</title>
+  <link rel="stylesheet" href="responsive-design-principles-summary.css">
+</head>
+<body>
+  <header>
+    <h1>Responsive Design Principles Summary</h1>
+  </header>
+
+  <main>
+    <section class="principles-grid">
+
+      <div class="principle-box">
+        <h2>Fluid Layouts</h2>
+        <p>
+          Fluid layouts use relative units (like percentages or vw) instead of fixed px values, allowing elements to resize with the viewport.
+        </p>
+        <pre><code>container { width: 80%; margin: auto; }</code></pre>
+      </div>
+
+      <div class="principle-box">
+        <h2>Flexible Media</h2>
+        <p>
+          Flexible media ensures images and videos scale within their containers without overflowing.
+        </p>
+        <pre><code>img { max-width: 100%; height: auto; }</code></pre>
+      </div>
+
+      <div class="principle-box">
+        <h2>Breakpoints</h2>
+        <p>
+          Breakpoints allow layout changes at specific screen widths for optimal readability and design.
+        </p>
+        <pre><code>@media (max-width: 600px) { body { font-size: 14px; } }</code></pre>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 | Created by <strong>Gitesh</strong></p>
+  </footer>
+</body>
+</html>
