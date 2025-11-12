@@ -1,0 +1,30 @@
+h2{
+    width: 100%;
+    height:100px;
+    background-color:rgb(139, 214, 214);
+    border:1px;
+    text-align:center;
+    padding-top:30px;
+    padding-left:20px;
+    border: 1px solid black;
+    color:crimson;
+}
+.hero {
+  background: linear-gradient(to right, #007bff, #00bcd4);
+  height: 90vh; /* fills most of screen */
+}
+
+/* Hero text styles */
+.hero h1 {
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Hover effect on button */
+.btn-light:hover {
+  background-color: #e3f2fd;
+  color: #007bff;
+}

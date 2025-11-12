@@ -1,0 +1,35 @@
+:root {
+    --bs-primary: #e63946;
+    --bs-font-sans-serif: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--bs-font-sans-serif);
+    background-color: #f8f9fa;
+}
+
+h1, h5 {
+    font-weight: 600;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+.btn-primary:hover {
+    background-color: #c72836;
+}

@@ -1,0 +1,22 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+}
+
+h2 {
+    color: #212529;
+    font-weight: 600;
+}
+
+.alert {
+    border-radius: 10px;
+}
+
+.bg-light {
+    background-color: #f1f3f5 !important;
+}

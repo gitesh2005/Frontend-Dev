@@ -1,0 +1,86 @@
+/* ===== Header Section ===== */
+h4 {
+    width: auto;
+    background-color: antiquewhite;
+    color: blueviolet;
+    border: 0.5px solid black;
+    height: auto; /* ✅ use auto for flexible height */
+    text-align: center;
+    padding: 15px 10px; /* ✅ balanced padding top & sides */
+    font-weight: bold;
+    border-radius: 8px; /* ✅ adds smoother edge */
+    margin-bottom: 20px; /* ✅ adds space below header */
+}
+
+/* ===== Primary Button ===== */
+.btn.btn-primary.btn-lg {
+    background-color: rgb(211, 169, 169);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px; /* ✅ better padding for large buttons */
+    margin: 10px; /* ✅ spacing between buttons */
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn.btn-primary.btn-lg:hover {
+    background-color: rgb(189, 139, 139);
+    transform: scale(1.05); /* ✅ smooth hover animation */
+}
+
+/* ===== Secondary Button ===== */
+.btn.btn-secondary.btn-lg {
+    background-color: cadetblue;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin: 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn.btn-secondary.btn-lg:hover {
+    background-color: #4f8f91;
+    transform: scale(1.05);
+}
+
+/* ===== Profile Image ===== */
+#image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid blueviolet;
+    margin-top: 20px;
+    object-fit: cover; /* ✅ keeps image properly centered */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* ✅ soft shadow */
+}
+
+/* ===== Contact Form ===== */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+    border-radius: 8px;
+    border: 1px solid #aaa;
+}
+
+form button {
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    transform: scale(1.03);
+}
+
+/* ===== Overall Body ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* ✅ soft gray background */
+}

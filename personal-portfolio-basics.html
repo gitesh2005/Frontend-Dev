@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Basics</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+        crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="personal-portfolio-basics.css">
+</head>
+
+<body class="bg-light text-dark">
+
+  <!-- Header Section -->
+  <header class="text-center p-4 bg-light">
+    <h4 class="fw-bold text-primary">Gitesh</h4>
+    <p class="text-secondary fw-semibold mb-4">
+      Building Smart Solutions, One Line of Code at a Time
+    </p>
+  </header>
+
+  <!-- Main Content Container -->
+  <div class="container text-center p-4">
+
+    <!-- Profile Image -->
+    <div class="d-flex flex-column align-items-center mb-4">
+      <img src="gitu.jpg" alt="Profile Image" id="image" class="img-fluid rounded-circle mb-4">
+    </div>
+
+    <!-- Buttons -->
+    <div class="mb-4">
+      <button type="button" class="btn btn-primary btn-lg me-3">Hire Me</button>
+      <button type="button" class="btn btn-secondary btn-lg">Download CV</button>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="mt-5">
+      <h5 class="fw-bold mb-3">Contact Me</h5>
+      <form class="mx-auto" style="max-width: 400px;">
+        <input type="text" class="form-control mb-3" placeholder="Your Name">
+        <input type="email" class="form-control mb-3" placeholder="Your Email">
+        <textarea class="form-control mb-3" rows="3" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn btn-success w-100">Send Message</button>
+      </form>
+    </div>
+
+  </div>
