@@ -1,16 +1,10 @@
-// Q2: Multi-Type Data Summary
-// Simulate a small database summary using different data types.
-
-// Declaring different data types
-let userName = "Gitesh";            // string
-let userAge = 20;                   // number
-let isActive = true;                // boolean
-let skills = ["HTML", "CSS", "JS"]; // array
-let profile = { city: "Mathura", college: "GLA" }; // object
-let emptyValue = null;              // null
-let notAssigned;                    // undefined
-
-// Creating a summary array of objects for console.table()
+let userName = "Gitesh";    
+let userAge = 20;        
+let isActive = true;       
+let skills = ["HTML", "CSS", "JS"];
+let profile = { city: "Mathura", college: "GLA" };
+let emptyValue = null;
+let notAssigned;
 let report = [
     {
         label: "User Name",
@@ -49,5 +43,4 @@ let report = [
     }
 ];
 
-// Printing the formatted report
 console.table(report);
