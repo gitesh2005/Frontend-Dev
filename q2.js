@@ -44,3 +44,29 @@ let report = [
 ];
 
 console.table(report);
+
+
+let report1 =[
+    {
+        label:"UserName",
+        value:userName,
+        type:typeof userName
+    },
+    {
+        label:"UserAge",
+        value:userAge,
+        type:typeof userAge
+    },
+    {
+        label:"IsActive",
+        value:isActive,
+        type:typeof isActive
+    },
+    {
+        label:"skills",
+        value:skills,
+        type:Array.isArray(skills) ? "array" : typeof skills
+    }
+]
+
+console.table(report1);
