@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Table Filter</title>
+  <style>
+    body{font-family:Arial;padding:20px}
+    input{padding:6px;width:300px;margin-bottom:12px}
+    table{width:100%;border-collapse:collapse}
+    th,td{border:1px solid #ccc;padding:8px;text-align:left}
+    #nores{display:none;padding:10px;background:#ffeeee;color:#900;margin-top:8px}
+  </style>
+</head>
+<body>
+  <h2>Student Table Filter</h2>
+  <input id="search" placeholder="Search name, branch or CGPA">
+  <table id="studentTable">
+    <thead><tr><th>Name</th><th>Branch</th><th>CGPA</th></tr></thead>
+    <tbody>
+      <tr><td>Ashok</td><td>CS</td><td>8.6</td></tr>
+      <tr><td>Rina</td><td>IT</td><td>9.1</td></tr>
+      <tr><td>Vikram</td><td>EE</td><td>7.8</td></tr>
+      <tr><td>Neha</td><td>CS</td><td>8.9</td></tr>
+    </tbody>
+  </table>
+  <div id="nores">No results found</div>
+  <script src="table-filter.js"></script>
+</body>
+</html>
