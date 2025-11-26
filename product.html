@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Products</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <style>
+    .item{padding:8px;border:1px solid #ccc;margin:5px;cursor:pointer}
+    .highlight{background:yellow}
+    .selected{color:red}
+    .discount{border:2px solid green}
+  </style>
+</head>
+<body>
+  <div class="item" data-stock="yes" data-discount="true">Product A <span class="fav">❤️</span></div>
+  <div class="item" data-stock="no">Product B <span class="fav">❤️</span></div>
+  <div class="item" data-stock="yes">Product C <span class="fav">❤️</span></div>
+  <div class="item" data-stock="yes" data-discount="true">Product D <span class="fav">❤️</span></div>
+  <div class="item" data-stock="yes">Product E <span class="fav">❤️</span></div>
+  <script src="products.js"></script>
+</body>
+</html>
